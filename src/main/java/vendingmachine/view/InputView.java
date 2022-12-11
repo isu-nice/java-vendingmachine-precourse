@@ -26,4 +26,11 @@ public class InputView {
         InputValidator.validateToInteger(insertMoney);
         return Integer.parseInt(insertMoney);
     }
+
+    public static String inputProductName() {
+        System.out.println("구매할 상품명을 입력해 주세요.");
+        String productName = Console.readLine();
+        System.out.println();
+        return productName;
+    }
 }
